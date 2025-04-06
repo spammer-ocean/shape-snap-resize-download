@@ -5,9 +5,9 @@ import ImageCropperContainer from '@/components/ImageCropper/ImageCropperContain
 const Index = () => {
   return (
     <ImageCropperContainer 
-      initialShape="square"
-      initialWidth={200}
-      initialHeight={200}
+      initialShape="rectangle"
+      initialWidth={100}
+      initialHeight={150}
       maxSizeMB={2}
       borderRadius={4}
     />

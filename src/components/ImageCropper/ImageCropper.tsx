@@ -113,8 +113,7 @@ const ImageCropper: React.FC<ImageCropperProps> = ({
           ruleOfThirds
           className={cn(
             "max-h-[60vh] w-auto object-contain",
-            "transform transition-transform",
-            { "scale-100": zoom === 1 }
+            "transform transition-transform"
           )}
           style={{ transform: `scale(${zoom})` }}
         >
