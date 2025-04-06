@@ -109,13 +109,15 @@ const ImageCropper: React.FC<ImageCropperProps> = ({
           onComplete={(c) => setCompletedCrop(c)}
           aspect={getAspectRatio()}
           circularCrop={shape === 'circle'}
-          style={getCropStyles()}
+          style={{ 
+            ...getCropStyles(),
+            transform: `scale(${zoom})` 
+          }}
           ruleOfThirds
           className={cn(
             "max-h-[60vh] w-auto object-contain",
             "transform transition-transform"
           )}
-          style={{ transform: `scale(${zoom})` }}
         >
           <img
             ref={imgRef}
